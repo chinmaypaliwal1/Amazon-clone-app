@@ -1,0 +1,110 @@
+.productForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px ;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.productForm h2 {
+    margin-bottom: 20px;
+}
+
+.productForm label {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.productForm input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.productForm button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0c14b;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    cursor: pointer;
+}
+
+.productForm button:hover {
+    background-color: #ddb347;
+}
+.show-hide-btn {
+	text-align: initial;
+	padding: 20px;
+}
+.show-hide-btn button {
+	padding: 10px 0;
+	width: 100px;
+	background: #f0c14b;
+	border: none;
+}
+.productDetails {
+	position: relative;
+	z-index: 2;
+	top: 0;
+	width: 500px;
+	left: 0;
+}
+@media (max-width:1000px) {
+    .home__row {
+        margin: 0 5px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 5fr 5fr 0fr;
+    }
+   
+    .header__searchButton {
+        padding: 8px;
+        background: #febd69;
+        border: none;
+        cursor: pointer;
+    }
+    .productForm {
+        display: flex;
+        flex-direction: column;
+        max-width: 275px;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: white;
+    }
+    .header__searchInput {
+        height: auto;
+        padding: 10px;
+        border: none;
+        max-width: 100px;
+    }
+    .product img {
+        max-height: 200px;
+        width: 100%;
+        object-fit: contain;
+        margin: 15px;
+    }
+}
+@media (max-width:668px){
+    .home__row {
+        margin: 0 5px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 5fr;
+    }
+    .productDetails {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        max-width: 500px;
+        left: 0;
+    }
+}
