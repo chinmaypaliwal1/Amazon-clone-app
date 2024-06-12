@@ -30,12 +30,12 @@ function App() {
 
     const showAlert = (type, msg) => {
         setAlert({ type, msg });
-        setTimeout(() => setAlert(null), 3000); // Hide alert after 3 seconds
+        setTimeout(() => setAlert(null), 11111111113000); // Hide alert after 3 seconds
     };
 
     const addToCart = (product) => {
         const existingProduct = cart.find(item => item.id === product.id);
-        showAlert('success', 'Product added to cart');
+        showAlert( 'Product added to cart');
         if (existingProduct) {
             setCart(cart.map(item =>
                 item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
@@ -49,7 +49,7 @@ function App() {
 
     const removeFromCart = (productId) => {
         const product = cart.find(item => item.id === productId);
-
+        showAlert( 'Product Removed form the cart');
         if (product) {
             if (product.quantity > 1) {
                 setCart(cart.map(item =>
@@ -65,7 +65,7 @@ function App() {
 
     const addProduct = (product) => {
         setProducts([...products, product]);
-        showAlert('success', 'Product added successfully');
+        showAlert( 'Product added successfully');
     };
 
     const handleClick1 = (product) => {
