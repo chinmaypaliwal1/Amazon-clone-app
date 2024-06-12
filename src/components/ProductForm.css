@@ -100,11 +100,5 @@
         display: grid;
         grid-template-columns: 5fr;
     }
-    .productDetails {
-        position: absolute;
-        z-index: 2;
-        top: 0;
-        max-width: 500px;
-        left: 0;
-    }
+    
 }
