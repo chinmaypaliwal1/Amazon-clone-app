@@ -30,7 +30,7 @@ function App() {
 
     const showAlert = (type, msg) => {
         setAlert({ type, msg });
-        setTimeout(() => setAlert(null), 11111111113000); // Hide alert after 3 seconds
+        setTimeout(() => setAlert(null), 3000); 
     };
 
     const addToCart = (product) => {
